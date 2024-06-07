@@ -1,6 +1,31 @@
-# Getting Started with Create React App
+# react-api-material-ui
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Table of Contents
+
+- [Introduction](#introduction)
+- [Installation](#installation)
+- [Available Scripts](#available-scripts)
+- [Project Structure](#project-structure)
+- [Dependencies](#dependencies)
+
+## Introduction
+
+`react-api-material-ui` is a React application that utilizes Material-UI for the UI components and Axios for making API calls. The project is set up with essential tools for development, testing, and building the application.
+
+## Installation
+
+To get started with this project, you need to have Node.js installed. Follow the steps below to set up the project:
+
+1. **Clone the repository:**
+    ```sh
+    git clone https://github.com/your-repo/react-api-material-ui.git
+    cd react-api-material-ui
+    ```
+
+2. **Install the dependencies:**
+    ```sh
+    npm install
+    ```
 
 ## Available Scripts
 
@@ -8,63 +33,61 @@ In the project directory, you can run:
 
 ### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Runs the app in the development mode.
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+The page will reload if you make edits.
+You will also see any lint errors in the console.
 
-### `npm test`
+## Project Structure
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The project's structure is as follows:
 
-### `npm run build`
+```
+react-api-material-ui/
+├── node_modules/
+├── public/
+│   ├── index.html
+│   └── ...
+├── src/
+│   ├── components/
+    │    ├── Navbar.js
+│   │    ├── PostList.js
+│   │    └──  SearchBar.js
+│   │   
+│   ├── App.js
+│   ├── index.js
+│   └── ...
+├── .gitignore
+├── package.json
+├── README.md
+└── ...
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- `public/`: This folder contains the public assets and the `index.html` file.
+- `src/`: This folder contains the React components and other source files.
+- `.gitignore`: This file specifies which files and directories to ignore in the Git repository.
+- `package.json`: This file contains the project dependencies and scripts.
+- `README.md`: This file contains information about the project.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Dependencies
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Main Dependencies
 
-### `npm run eject`
+- **@emotion/react**: ^11.11.4
+- **@emotion/styled**: ^11.11.5
+- **@mui/material**: ^5.15.19
+- **axios**: ^1.7.2
+- **react**: ^18.3.1
+- **react-dom**: ^18.3.1
+- **react-scripts**: 5.0.1
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Development Dependencies
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- **@testing-library/jest-dom**: ^5.17.0
+- **@testing-library/react**: ^13.4.0
+- **@testing-library/user-event**: ^13.5.0
+- **web-vitals**: ^2.1.4
+- **ajv**: ^7.2.4
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
