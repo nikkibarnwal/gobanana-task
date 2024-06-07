@@ -1,5 +1,6 @@
 import axios from 'axios';
 
+// const API_URL = 'https://jsonplaceholder.typicode.com/photos';
 const API_URL = 'https://jsonplaceholder.typicode.com/posts';
 
 export const fetchPosts = async () => {

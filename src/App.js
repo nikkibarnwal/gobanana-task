@@ -1,12 +1,13 @@
-import React, { useState, useEffect } from 'react';
-import { Container, Typography } from '@mui/material';
-import { fetchPosts } from './api';
-import PostList from './components/PostList';
-import SearchBar from './components/SearchBar';
+import React, { useState, useEffect } from "react";
+import { Container, Typography } from "@mui/material";
+import { fetchPosts } from "./api";
+import PostList from "./components/PostList";
+import SearchBar from "./components/SearchBar";
+import Navbar from "./components/Navbar";
 
 const App = () => {
   const [posts, setPosts] = useState([]);
-  const [searchTerm, setSearchTerm] = useState('');
+  const [searchTerm, setSearchTerm] = useState("");
 
   useEffect(() => {
     const getPosts = async () => {
@@ -23,9 +24,7 @@ const App = () => {
 
   return (
     <Container>
-      <Typography variant="h2" gutterBottom>
-        Posts
-      </Typography>
+      <Navbar />
       <SearchBar searchTerm={searchTerm} onSearchChange={setSearchTerm} />
       <PostList posts={filteredPosts} />
     </Container>
